@@ -27,6 +27,11 @@ public class LoginGeneratorTest {
     }
 
     @Test
+    public void testGenerateLoginForNameWithPaulAndDu() {
+        assertEquals("PDU",loginGenerator.generateLoginForNomAndPrenom("Du","Paul"));
+    }
+
+    @Test
     public void testGenerateLoginForJeanAndRolling() {
         assertEquals("JROL1",loginGenerator.generateLoginForNomAndPrenom("Rolling","Jean"));
     }
